@@ -8,9 +8,15 @@ Use xcode-select to set active Xcode to 7.3.
 
 CUDA 8.0 Toolkit only supports Xcode 7.3-.
 
+You'll need an Nvidia graphics card to run CUDA.
+
 ## Nvidia OptiX
 
 Obtain Nvidia OptiX [here](https://developer.nvidia.com/optix) and install it at default location.
+
+## Cinder
+
+Get cinder [here](https://github.com/cinder/cinder), build, and set the "CINDER_PATH" macro in build settings to point to your cinder root.
 
 # Existing Cinder Xcode project configuration notes
 
