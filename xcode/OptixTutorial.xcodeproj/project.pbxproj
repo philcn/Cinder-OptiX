@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		4A8601071DAC8F97006C3457 /* sutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A8601041DAC8F97006C3457 /* sutil.cpp */; };
+		4A86010C1DAC8FD3006C3457 /* HDRLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A8601081DAC8FD3006C3457 /* HDRLoader.cpp */; };
+		4A86010D1DAC8FD3006C3457 /* PPMLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A86010A1DAC8FD3006C3457 /* PPMLoader.cpp */; };
+		4A8601111DAC9074006C3457 /* Arcball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A86010F1DAC9074006C3457 /* Arcball.cpp */; };
+		4A8601131DAC920A006C3457 /* liboptix.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8601121DAC920A006C3457 /* liboptix.1.dylib */; };
+		4A8601151DAC94AF006C3457 /* OptixTutorialApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A8601141DAC94AF006C3457 /* OptixTutorialApp.cpp */; };
+		4A8601181DACA23A006C3457 /* tutorial0.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600E81DAC8ED3006C3457 /* tutorial0.cu */; };
+		4A8601191DACA23E006C3457 /* tutorial1.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600E91DAC8ED3006C3457 /* tutorial1.cu */; };
+		4A86011A1DACA23E006C3457 /* tutorial2.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600EA1DAC8ED3006C3457 /* tutorial2.cu */; };
+		4A86011B1DACA23E006C3457 /* tutorial3.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600EB1DAC8ED3006C3457 /* tutorial3.cu */; };
+		4A86011C1DACA23E006C3457 /* tutorial4.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600EC1DAC8ED3006C3457 /* tutorial4.cu */; };
+		4A86011D1DACA23E006C3457 /* tutorial5.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600ED1DAC8ED3006C3457 /* tutorial5.cu */; };
+		4A86011E1DACA23E006C3457 /* tutorial6.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600EE1DAC8ED3006C3457 /* tutorial6.cu */; };
+		4A86011F1DACA23E006C3457 /* tutorial7.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600EF1DAC8ED3006C3457 /* tutorial7.cu */; };
+		4A8601201DACA23E006C3457 /* tutorial8.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600F01DAC8ED3006C3457 /* tutorial8.cu */; };
+		4A8601211DACA23E006C3457 /* tutorial9.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600F11DAC8ED3006C3457 /* tutorial9.cu */; };
+		4A8601221DACA23E006C3457 /* tutorial10.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600F21DAC8ED3006C3457 /* tutorial10.cu */; };
+		4A8601231DACA23E006C3457 /* tutorial11.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600F31DAC8ED3006C3457 /* tutorial11.cu */; };
+		4A8601241DACA252006C3457 /* parallelogram.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600E51DAC8ED3006C3457 /* parallelogram.cu */; };
+		4A8601251DACA255006C3457 /* box.cu in Resources */ = {isa = PBXBuildFile; fileRef = 4A8600E21DAC8ED3006C3457 /* box.cu */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8FC260ABBBAE4F1088FC7400 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8B2DC76AC9854A4AB340B44D /* CinderApp.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		4A8601161DACA08E006C3457 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.cu";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${PROJECT_DIR}/../assets/ptx/${INPUT_FILE_BASE}.cu.ptx",
+			);
+			script = "mkdir -p ${PROJECT_DIR}/../assets/ptx\n\n/usr/local/cuda/bin/nvcc -ptx -o ${PROJECT_DIR}/../assets/ptx/${INPUT_FILE_BASE}.cu.ptx -I../include -I/Developer/OptiX/include ${INPUT_FILE_PATH}\n\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13F31356637A475C85E6E260 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2B4993B6385D4E648E3066B3 /* OptixTutorial_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = OptixTutorial_Prefix.pch; sourceTree = "<group>"; };
+		4A8600E21DAC8ED3006C3457 /* box.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = box.cu; path = ../src/box.cu; sourceTree = "<group>"; };
+		4A8600E31DAC8ED3006C3457 /* commonStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commonStructs.h; path = ../src/commonStructs.h; sourceTree = "<group>"; };
+		4A8600E51DAC8ED3006C3457 /* parallelogram.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = parallelogram.cu; path = ../src/parallelogram.cu; sourceTree = "<group>"; };
+		4A8600E61DAC8ED3006C3457 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random.h; path = ../src/random.h; sourceTree = "<group>"; };
+		4A8600E71DAC8ED3006C3457 /* tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tutorial.h; path = ../src/tutorial.h; sourceTree = "<group>"; };
+		4A8600E81DAC8ED3006C3457 /* tutorial0.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial0.cu; path = ../src/tutorial0.cu; sourceTree = "<group>"; };
+		4A8600E91DAC8ED3006C3457 /* tutorial1.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial1.cu; path = ../src/tutorial1.cu; sourceTree = "<group>"; };
+		4A8600EA1DAC8ED3006C3457 /* tutorial2.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial2.cu; path = ../src/tutorial2.cu; sourceTree = "<group>"; };
+		4A8600EB1DAC8ED3006C3457 /* tutorial3.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial3.cu; path = ../src/tutorial3.cu; sourceTree = "<group>"; };
+		4A8600EC1DAC8ED3006C3457 /* tutorial4.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial4.cu; path = ../src/tutorial4.cu; sourceTree = "<group>"; };
+		4A8600ED1DAC8ED3006C3457 /* tutorial5.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial5.cu; path = ../src/tutorial5.cu; sourceTree = "<group>"; };
+		4A8600EE1DAC8ED3006C3457 /* tutorial6.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial6.cu; path = ../src/tutorial6.cu; sourceTree = "<group>"; };
+		4A8600EF1DAC8ED3006C3457 /* tutorial7.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial7.cu; path = ../src/tutorial7.cu; sourceTree = "<group>"; };
+		4A8600F01DAC8ED3006C3457 /* tutorial8.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial8.cu; path = ../src/tutorial8.cu; sourceTree = "<group>"; };
+		4A8600F11DAC8ED3006C3457 /* tutorial9.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial9.cu; path = ../src/tutorial9.cu; sourceTree = "<group>"; };
+		4A8600F21DAC8ED3006C3457 /* tutorial10.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial10.cu; path = ../src/tutorial10.cu; sourceTree = "<group>"; };
+		4A8600F31DAC8ED3006C3457 /* tutorial11.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tutorial11.cu; path = ../src/tutorial11.cu; sourceTree = "<group>"; };
+		4A8601041DAC8F97006C3457 /* sutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sutil.cpp; sourceTree = "<group>"; };
+		4A8601051DAC8F97006C3457 /* sutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sutil.h; sourceTree = "<group>"; };
+		4A8601061DAC8F97006C3457 /* sutilapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sutilapi.h; sourceTree = "<group>"; };
+		4A8601081DAC8FD3006C3457 /* HDRLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDRLoader.cpp; sourceTree = "<group>"; };
+		4A8601091DAC8FD3006C3457 /* HDRLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDRLoader.h; sourceTree = "<group>"; };
+		4A86010A1DAC8FD3006C3457 /* PPMLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPMLoader.cpp; sourceTree = "<group>"; };
+		4A86010B1DAC8FD3006C3457 /* PPMLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMLoader.h; sourceTree = "<group>"; };
+		4A86010E1DAC905D006C3457 /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		4A86010F1DAC9074006C3457 /* Arcball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arcball.cpp; sourceTree = "<group>"; };
+		4A8601101DAC9074006C3457 /* Arcball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arcball.h; sourceTree = "<group>"; };
+		4A8601121DAC920A006C3457 /* liboptix.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liboptix.1.dylib; path = ../../../../../../Developer/OptiX/lib64/liboptix.1.dylib; sourceTree = "<group>"; };
+		4A8601141DAC94AF006C3457 /* OptixTutorialApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OptixTutorialApp.cpp; path = ../src/OptixTutorialApp.cpp; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8B2DC76AC9854A4AB340B44D /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* OptixTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptixTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D576621922467EB05E9898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8601131DAC920A006C3457 /* liboptix.1.dylib in Frameworks */,
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8601031DAC8F97006C3457 /* sutil */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4A8600E21DAC8ED3006C3457 /* box.cu */,
+				4A8600E31DAC8ED3006C3457 /* commonStructs.h */,
+				4A8601141DAC94AF006C3457 /* OptixTutorialApp.cpp */,
+				4A8600E51DAC8ED3006C3457 /* parallelogram.cu */,
+				4A8600E61DAC8ED3006C3457 /* random.h */,
+				4A8600E71DAC8ED3006C3457 /* tutorial.h */,
+				4A8600E81DAC8ED3006C3457 /* tutorial0.cu */,
+				4A8600E91DAC8ED3006C3457 /* tutorial1.cu */,
+				4A8600EA1DAC8ED3006C3457 /* tutorial2.cu */,
+				4A8600EB1DAC8ED3006C3457 /* tutorial3.cu */,
+				4A8600EC1DAC8ED3006C3457 /* tutorial4.cu */,
+				4A8600ED1DAC8ED3006C3457 /* tutorial5.cu */,
+				4A8600EE1DAC8ED3006C3457 /* tutorial6.cu */,
+				4A8600EF1DAC8ED3006C3457 /* tutorial7.cu */,
+				4A8600F01DAC8ED3006C3457 /* tutorial8.cu */,
+				4A8600F11DAC8ED3006C3457 /* tutorial9.cu */,
+				4A8600F21DAC8ED3006C3457 /* tutorial10.cu */,
+				4A8600F31DAC8ED3006C3457 /* tutorial11.cu */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* OptixTutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* OptixTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = OptixTutorial;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				13F31356637A475C85E6E260 /* Resources.h */,
+				2B4993B6385D4E648E3066B3 /* OptixTutorial_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B2DC76AC9854A4AB340B44D /* CinderApp.icns */,
+				D5D576621922467EB05E9898 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8601121DAC920A006C3457 /* liboptix.1.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A8601031DAC8F97006C3457 /* sutil */ = {
+			isa = PBXGroup;
+			children = (
+				4A86010F1DAC9074006C3457 /* Arcball.cpp */,
+				4A8601101DAC9074006C3457 /* Arcball.h */,
+				4A8601041DAC8F97006C3457 /* sutil.cpp */,
+				4A8601051DAC8F97006C3457 /* sutil.h */,
+				4A86010E1DAC905D006C3457 /* glew.h */,
+				4A8601061DAC8F97006C3457 /* sutilapi.h */,
+				4A8601081DAC8FD3006C3457 /* HDRLoader.cpp */,
+				4A8601091DAC8FD3006C3457 /* HDRLoader.h */,
+				4A86010A1DAC8FD3006C3457 /* PPMLoader.cpp */,
+				4A86010B1DAC8FD3006C3457 /* PPMLoader.h */,
+			);
+			name = sutil;
+			path = ../blocks/sutil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* OptixTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OptixTutorial" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+				4A8601161DACA08E006C3457 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = OptixTutorial;
+			productInstallPath = "$(HOME)/Applications";
+			productName = OptixTutorial;
+			productReference = 8D1107320486CEB800E47090 /* OptixTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OptixTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* OptixTutorial */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* OptixTutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8601221DACA23E006C3457 /* tutorial10.cu in Resources */,
+				4A8601241DACA252006C3457 /* parallelogram.cu in Resources */,
+				4A8601201DACA23E006C3457 /* tutorial8.cu in Resources */,
+				4A86011D1DACA23E006C3457 /* tutorial5.cu in Resources */,
+				4A86011B1DACA23E006C3457 /* tutorial3.cu in Resources */,
+				4A86011F1DACA23E006C3457 /* tutorial7.cu in Resources */,
+				4A86011A1DACA23E006C3457 /* tutorial2.cu in Resources */,
+				4A8601211DACA23E006C3457 /* tutorial9.cu in Resources */,
+				4A86011C1DACA23E006C3457 /* tutorial4.cu in Resources */,
+				4A86011E1DACA23E006C3457 /* tutorial6.cu in Resources */,
+				4A8601251DACA255006C3457 /* box.cu in Resources */,
+				4A8601181DACA23A006C3457 /* tutorial0.cu in Resources */,
+				8FC260ABBBAE4F1088FC7400 /* CinderApp.icns in Resources */,
+				4A8601231DACA23E006C3457 /* tutorial11.cu in Resources */,
+				4A8601191DACA23E006C3457 /* tutorial1.cu in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8601151DAC94AF006C3457 /* OptixTutorialApp.cpp in Sources */,
+				4A8601071DAC8F97006C3457 /* sutil.cpp in Sources */,
+				4A8601111DAC9074006C3457 /* Arcball.cpp in Sources */,
+				4A86010C1DAC8FD3006C3457 /* HDRLoader.cpp in Sources */,
+				4A86010D1DAC8FD3006C3457 /* PPMLoader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OptixTutorial_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					/Developer/OptiX/include,
+					/usr/local/cuda/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = /Developer/OptiX/lib64;
+				LIBRARY_SEARCH_PATHS = /Developer/OptiX/lib64;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = OptixTutorial;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OptixTutorial_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					/Developer/OptiX/include,
+					/usr/local/cuda/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = /Developer/OptiX/lib64;
+				LIBRARY_SEARCH_PATHS = /Developer/OptiX/lib64;
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = OptixTutorial;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../cinder_0.9.0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../cinder_0.9.0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OptixTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OptixTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
